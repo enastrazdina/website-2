@@ -1,0 +1,120 @@
+
+
+body {
+    height: 100%;
+    background: rgb(0, 0, 0);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a:hover {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.637) !important;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.103);
+    text-decoration: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-family: Arial, Icons;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.work {
+    padding-right: 8px;
+}
+.menu {    
+    position: fixed;
+    z-index: 1;
+    line-height: 30px;
+}
+.container-black {
+    width: 100%;
+    height: 700px;
+}
+@media screen and (max-width: 1220px) {
+    .container-black { 
+        height: 300px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .container-black { 
+        height: 300px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .container-black { 
+        height: 50px !important;
+    }
+}
+@media screen and (max-width: 920px) {
+    .container-black { 
+        height: 240px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .menu {
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        font-family: Arial, Icons;
+        text-decoration: none;
+        } 
+    }
+
+/* body {
+    height: 100vh;
+    display: flex;
+    background: rgb(0, 0, 0);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(221, 0, 0, 0.644) !important;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.103);
+    text-decoration: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: Arial, Icons;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.menu {
+    line-height: 25px;
+}
+
+.container-black {
+    width: 100%;
+    height: 700px;
+}
+
+@media screen and (max-width: 560px) {
+    .container-black {
+        height: 50px !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container-black {
+        height: 240px;
+    }
+}
+
+
+/* 

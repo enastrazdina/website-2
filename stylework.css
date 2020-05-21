@@ -1,0 +1,536 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+    font-family: "helvetica neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 50px !important;
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    flex-direction: row;
+    color: rgba(77, 77, 77, 0.170) !important;
+}
+
+strong {
+    font-size: 13px;
+}
+
+.button {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.img-fluid,
+.img-fluid-2,
+.img-fluid-last,
+.img-fluid-3,
+.img-fluid-no-content {
+    width: 960px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+.img-fluid-2,
+.img-fluid-3 {
+    padding-bottom: 0;
+}
+
+.menu-container {
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    font-family: Arial, Icons;
+    background: transparent;
+    text-decoration: none;
+    color: rgba(77, 77, 77, 0.170) !important;
+    font-size: 16px;
+    font-weight: bolder;
+    position: fixed;
+    margin-bottom: 30px !important;
+    display: inline-block;
+
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    z-index: 2;
+    font-family: Arial, Icons;
+    background: transparent;
+    text-decoration: none;
+    color: rgba(77, 77, 77, 0.103) !important;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.arrow {
+    color: rgba(77, 77, 77, 0.103) !important;
+    font-family: Arial, Icons;
+    font-size: 20px;
+    top: 0;
+    position: fixed;
+    margin-left: 5px;
+    font-weight: bolder;
+    margin-top: 40px;
+    z-index: 2;
+    background: transparent;
+    text-decoration: none;
+    transform: scale(1.7, 1.1);
+}
+
+#projects {
+    flex-direction: row;
+    height: 100vh;
+    position: fixed;
+    padding-top: 30px;
+    color: rgba(77, 77, 77, 0.103);
+    font-family: "helvetica neue", Helvetica, Arial, sans-serif;
+    font-size: 27px;
+    line-height: 36px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#project-flying-monks-temple,
+#project-fable,
+#project-sound-we-see,
+#project-lovebirds,
+#project-its-a-mans-thing,
+#project-spontaneous-inventions,
+#project-close-up,
+#project-few-found-fragments,
+#project-one-man-show,
+#project-close-up-curatorial,
+#project-zebra-katz,
+#project-36-hour-installation {
+    display: none;
+}
+
+#container-content-project {
+    color: rgba(77, 77, 77, 0.170) !important;
+    font-family: "helvetica neue", Helvetica, Arial, sans-serif;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.all-content {
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.menu:hover,
+.arrow:hover,
+.active,
+a:hover {
+    color: rgba(255, 0, 0, 0.637) !important;
+    text-decoration: none;
+    pointer-events: painted;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.project-info,
+.project-info-jonas,
+.project-info-sound-we-see {
+    float: right;
+    width: 50%;
+    text-align: left;
+    /* margin-bottom: 30px; */
+    margin-top: 15px;
+    text-decoration: none !important;
+}
+
+
+.project-info-jonas,
+.project-info-sound-we-see {
+    padding: 30px 0;
+    margin-top: 0;
+}
+
+.project-info-middle {
+    padding-top: 24px;
+}
+
+.project-info-ending {
+    padding-top: 28px;
+    padding-bottom: 50px;
+}
+
+.title-img,
+.title-close-up {
+    text-align: left;
+    width: 50%;
+    float: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.vimeo2:hover,
+.vimeo-zebra-katz:hover,
+.vimeo-sound-we-see:hover {
+    z-index: 1;
+}
+
+.vimeo2,
+.vimeo-sound-we-see {
+    position: relative;
+    top: 78px;
+    margin-left: 220px;
+    margin-bottom: 75px;
+    margin-top: 28px;
+    padding: 46.25% 0 0 0;
+}
+
+.vimeo-zebra-katz {
+    position: relative;
+    margin-left: 220px;
+    margin-bottom: 62px;
+    top: 65px;
+    padding: 36.25% 0 0 0;
+}
+
+@media screen and (max-width: 340px) {
+    #container-content-project {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    #container-content-project {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #projects,
+    .project-info,
+    .project-info-zebra {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .project-info-middle {
+        margin: 0;
+        padding-top: 22px;
+    }
+
+    .project-info-close-up,
+    .project-info-close-up-ending {
+        padding: 0 25px;
+        width: 100%;
+        float: none;
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .project-info-jonas,
+    .project-info-sound-we-see {
+        padding: 28px 20px 30px;
+        width: 100%;
+        float: right;
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .ending {
+        padding-bottom: 50px;
+    }
+
+    .button {
+        margin-left: 0 !important;
+    }
+
+    .project-info-close-up-ending {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    
+    .project-info-zebra {
+        margin: 0;
+        padding: 0 20px 25px;
+    }
+
+    #projects {
+        display: inline-block;
+        position: relative;
+        margin-top: 50px !important;
+        padding: 20px !important;
+        height: 0;
+    }
+
+    .last {
+        padding-bottom: 10px;
+    }
+
+    .img-fluid,
+    .img-fluid-2,
+    .img-fluid-3,
+    .img-fluid-no-content {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .img-fluid-2 {
+        padding-bottom: 0;
+    }
+
+    .img-fluid,
+    .img-fluid-no-content,
+    .img-fluid-2 {
+        width: 100%;
+    }
+
+    .img-fluid-no-content {
+        padding-bottom: 30px !important;
+    }
+
+    .img-fluid-3 {
+        padding-bottom: 0;
+    }
+
+    .arrow {
+        padding-left: 20px;
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-right: 20px !important;
+    }
+
+    .title-img,
+    .title-close-up {
+        text-align: center;
+        width: 100%;
+        display: block;
+        float: none !important;
+        margin: 0px;
+        padding: 0 5px 10px 5px;
+    }
+
+    .title-close-up {
+        padding-bottom: 0;
+    }
+
+    .vimeo-zebra-katz {
+        margin-left: 0;
+        top: 0;
+        padding: 43.25% 0 0 0;
+        margin-bottom: 10px;
+    }
+
+    .vimeo2 {
+        margin-left: 0;
+        padding: 56.25% 0 0;
+        top: 0 !important;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .vimeo-sound-we-see {
+        margin-left: 0;
+        padding: 56.25% 0 0;
+        top: 0 !important;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .project-info-sound-we-see {
+        padding-top: 30px !important;
+    }
+
+    .button {
+        margin-left: 15px;
+    }
+
+    .all-content {
+        flex-direction: column;
+        flex-grow: 1;
+        margin-top: 40px !important;
+        float: none;
+    }
+
+    iframe {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .img-fluid,
+    .img-fluid-2,
+    .img-fluid-3,
+    .img-fluid-no-content {
+        width: 860px !important;
+        margin: 0;
+        float: right;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .img-fluid,
+    .img-fluid-2,
+    .img-fluid-3,
+    .img-fluid-no-content {
+        min-width: 83% !important;
+        margin: 0;
+        float: right;
+    }
+
+    .img-fluid-no-content {
+        padding-bottom: 0;
+    }
+
+    .vimeo2,
+    .vimeo-sound-we-see {
+        top: -64px;
+        padding: 30.25% 0 40% 0;
+        margin-left: 17%;
+        margin-bottom: -209px;
+    }
+
+    .vimeo-sound-we-see {
+        margin-bottom: -204px;
+    }
+
+    .project-info-close-up {
+        margin: 0 !important;
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+
+    .project-info-close-up-ending {
+        padding-top: 91px;
+    }
+
+    .project-info-jonas .vimeo4 {
+        top: 80px;
+        margin-left: 17%;
+
+    }
+
+    .vimeo1 {
+        top: -57px;
+        margin-left: 220px;
+        padding: 30.25% 0 20% 0;
+        margin-bottom: -25px;
+    }
+
+    .vimeo-zebra-katz {
+        margin-left: 17%;
+        margin-bottom: 70px;
+        top: 69px;
+    }
+
+
+    .project-info-close-up {
+        margin-top: 80px;
+    }
+
+
+}
+
+@media screen and (min-width: 1438px) {
+    .project-info-close-up {
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+    .vimeo2 {
+        top: -80px !important;
+        margin-bottom: -238px;
+        margin-left: 227px;
+    }
+
+    .monks-last {
+        margin-bottom: 0;
+        padding-bottom: 0 !important;
+    }
+
+    .last {
+        margin-bottom: 35px !important;
+    }
+
+    .vimeo-sound-we-see {
+        top: 54px;
+        margin-bottom: -75px;
+        margin-left: 227px;
+        padding: 20.25% 0 30% 0;
+    }
+
+    .project-info-sound-we-see {
+        margin-top: 107px;
+    }
+
+    .vimeo-zebra-katz {
+        margin-bottom: 69px;
+        margin-left: 228px;
+    }
+
+    .img-fluid,
+    .img-fluid-2,
+    .img-fluid-3,
+    .img-fluid-no-content {
+        min-width: 83% !important;
+    }
+
+    .project-info-close-up-ending,
+    .project-info,
+    .project-info-close-up,
+    .project-info-zebra,
+    .project-info-after {
+        padding-bottom: 30px;
+    }
+}
+
+/* 1965px */
+@media screen and (min-width: 2045px) {
+    .vimeo2 {
+        top: -122px !important;
+        margin-bottom: -322px;
+    }
+
+    .img-fluid,
+    .img-fluid-2,
+    .img-fluid-3,
+    .img-fluid-no-content {
+        width: 88% !important;
+    }
+
+    .vimeo-zebra-katz {
+        top: 79px;
+        margin-bottom: 89px;
+        margin-left: 235px;
+        padding: 37.25% 0 0 0;
+
+    }
+
+    .project-info-close-up {
+        margin-bottom: 40px !important;
+
+    }
+
+    .vimeo-sound-we-see {
+        top: 72px;
+        margin-bottom: -40px;
+    }
+
+    .last {
+        margin-bottom: 20px !important;
+    }
+}
